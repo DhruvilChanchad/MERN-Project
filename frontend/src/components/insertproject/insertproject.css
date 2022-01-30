@@ -1,0 +1,101 @@
+.insertproject {
+    flex: 6;
+    width: 100px;
+    background: #ffff;
+    border: 1px solid #dddfe2;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    padding: 1rem;
+
+}
+
+.insertproject > h1{
+    display: flex;
+    justify-content: center;
+}
+
+.projectName{
+    display: flex;
+    justify-content: center;
+}
+
+.projectName > input{
+    border-radius: 8px;
+    width: 40%;
+    height: 80px;
+    border: 2px solid #dddfe2;
+    outline: none;
+    color: #1d2129;
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+}
+
+.insertproject > input {
+    border-radius: 8px;
+    width: 32%;
+    height: 45px;
+    border: 2px solid #dddfe2;
+    outline: none;
+    color: #1d2129;
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    display: inline-flex;
+}
+
+.insertproject > select {
+    width: 32%;
+    height: 45px;
+    border-radius: 8px;
+    border: 2px solid #dddfe2;
+    outline: none;
+    color: #1d2129;
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+}
+
+.statusChange{
+    display: flex;
+    justify-content: center;
+}
+
+.statusChange > label {
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.75rem;
+}
+
+.statusChange > input {
+    border: none;
+    outline: none;
+    color: #050505;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.75rem;
+    width: 100px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.insertproject > .btncontainer > .button {
+    width: 15%;
+    background: #1877f2;
+    border: 1px solid #8392a7;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0.75rem;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btncontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.link{
+    text-decoration: none;
+    color: #050505;
+}
