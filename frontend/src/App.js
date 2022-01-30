@@ -21,7 +21,7 @@ function App() {
 
       <Router>
         <Switch>
-        <Route path="/login">
+        <Route path="/">
             <Login setLoginUser={setLoginUser}/>
           </Route>
           <Route path="/register">
