@@ -44,11 +44,6 @@ const User = new mongoose.model("User",userSchema)
 
 const Project = new mongoose.model("Project",projectSchema)
 
-//get
-app.get("/",(req,resp) => {
-  resp.send("Welcome to MERN Project")
-})
-
 //Login
 app.post("/login",(req,resp) => {
     const { email , password} = req.body
