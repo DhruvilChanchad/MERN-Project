@@ -44,6 +44,12 @@ const User = new mongoose.model("User",userSchema)
 
 const Project = new mongoose.model("Project",projectSchema)
 
+app.use(express.static(path.join(__dirname, "/<frontend>/build")));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/<frontend>/build', 'index.html'));
+});
+
 //Login
 app.post("/login",(req,resp) => {
     const { email , password} = req.body
