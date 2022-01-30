@@ -44,10 +44,10 @@ const User = new mongoose.model("User",userSchema)
 
 const Project = new mongoose.model("Project",projectSchema)
 
-app.use(express.static(path.join(__dirname, "/frontend")));
+app.use(express.static(path.join(__dirname, "/frontend/src")));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/frontend', 'App.js'));
+  res.sendFile(path.join(__dirname, '/frontend/src', 'App.js'));
 });
 
 //Login
