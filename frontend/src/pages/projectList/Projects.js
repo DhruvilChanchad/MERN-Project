@@ -58,7 +58,23 @@ const Projects = ({ projectlist , loading }) => {
                 {
                     projectlist.map(post => 
                     <TableRow className='tablerow' key={post.projectName}>
-                        <TableCell className='projectListItem'>{`${post.projectName} ( ${post.start} to ${post.end} )`}</TableCell>
+                        <TableCell className='projectListItem'>{`${post.projectName} ( ${
+                                new Intl.DateTimeFormat('en-us', {
+                                    year : 'numeric',
+                                    month : 'long',
+                                    day : '2-digit'
+                                }).format(new Date(post.start))
+                            } 
+                            to 
+                            ${
+                                new Intl.DateTimeFormat('en-us', {
+                                    year : 'numeric',
+                                    month : 'long',
+                                    day : '2-digit'
+                                }).format(new Date(post.end))
+                            } 
+                            )`}
+                        </TableCell>
                         <TableCell className='projectListItem'>{post.type}</TableCell>
                         <TableCell className='projectListItem'>{post.division}</TableCell>
                         <TableCell className='projectListItem'>{post.category}</TableCell>

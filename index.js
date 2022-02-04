@@ -33,7 +33,7 @@ const projectSchema = new mongoose.Schema({
     category : String,
     priority : String,
     department : String,
-    start : String,
+    start : Date,
     end : Date,
     location : String,
     status : String
@@ -45,10 +45,6 @@ const User = new mongoose.model("User",userSchema)
 const Project = new mongoose.model("Project",projectSchema)
 
 // app.use(express.static(path.join(__dirname, "/frontend/src")));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/frontend/src', 'App.js'));
-});
 
 //Login
 app.post("/login",(req,resp) => {
